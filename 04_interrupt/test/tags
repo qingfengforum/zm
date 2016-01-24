@@ -1,0 +1,68 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BIN	makefile	/^BIN	:=	`pwd|xargs basename`$/;"	m
+CC	makefile	/^CC	:=	arm-linux-gcc$/;"	m
+C_SRC	makefile	/^C_SRC	:=	$(wildcard *.c)$/;"	m
+GPB0_OUT	beep.c	2;"	d	file:
+GPB5_OUT	led.c	5;"	d	file:
+GPB6_OUT	led.c	6;"	d	file:
+GPB7_OUT	led.c	7;"	d	file:
+GPB8_OUT	led.c	8;"	d	file:
+GPG0_IN	key.c	6;"	d	file:
+GPG11_IN	key.c	11;"	d	file:
+GPG3_IN	key.c	7;"	d	file:
+GPG5_IN	key.c	8;"	d	file:
+GPG6_IN	key.c	9;"	d	file:
+GPG7_IN	key.c	10;"	d	file:
+LD	makefile	/^LD	:=	arm-linux-ld$/;"	m
+OBJCOPY	makefile	/^OBJCOPY	:=	arm-linux-objcopy$/;"	m
+OBJS	makefile	/^OBJS	:=	${C_SRC:%.c=%.o} $/;"	m
+S_SRC	makefile	/^S_SRC	:=	$(wildcard *.s)$/;"	m
+_LED_H__	include/led.h	2;"	d
+__KEY_H__	include/key.h	2;"	d
+__LED_H__	include/beep.h	2;"	d
+_irq	head.s	/^_irq:$/;"	l
+_reset	head.s	/^_reset:$/;"	l
+_start	head.s	/^_start:$/;"	l
+beep_off	beep.c	/^void beep_off()$/;"	f
+beep_on	beep.c	/^void beep_on()$/;"	f
+delay	main.c	/^void delay(int n)$/;"	f
+init_beep	beep.c	/^void init_beep()$/;"	f
+init_interrupt_for_key	interrupt.c	/^void init_interrupt_for_key()$/;"	f
+init_key	key.c	/^void init_key()$/;"	f
+init_led	led.c	/^void init_led()$/;"	f
+int_key	interrupt.c	/^void int_key()$/;"	f
+interrupt_f	interrupt.c	/^void interrupt_f()$/;"	f
+isKEY	key.c	/^int isKEY(int num)$/;"	f
+key_press	key.c	/^int key_press()$/;"	f
+led_off	led.c	/^void led_off(int num)$/;"	f
+led_off_all	led.c	/^void led_off_all()$/;"	f
+led_on	led.c	/^void led_on(int num)\/\/num:1-4$/;"	f
+led_on_all	led.c	/^void led_on_all()$/;"	f
+main	main.c	/^int main()$/;"	f
+rEINTMASK	interrupt.c	21;"	d	file:
+rEINTPEND	interrupt.c	19;"	d	file:
+rEXTINT0	interrupt.c	23;"	d	file:
+rEXTINT1	interrupt.c	25;"	d	file:
+rEXTINT2	interrupt.c	27;"	d	file:
+rGPBCON	beep.c	3;"	d	file:
+rGPBCON	led.c	1;"	d	file:
+rGPBDAT	beep.c	5;"	d	file:
+rGPBDAT	led.c	3;"	d	file:
+rGPGCON	interrupt.c	30;"	d	file:
+rGPGCON	key.c	1;"	d	file:
+rGPGDAT	interrupt.c	31;"	d	file:
+rGPGDAT	key.c	3;"	d	file:
+rINTMOD	interrupt.c	3;"	d	file:
+rINTMSK	interrupt.c	5;"	d	file:
+rINTOFFSET	interrupt.c	11;"	d	file:
+rINTPND	interrupt.c	9;"	d	file:
+rINTSUBMSK	interrupt.c	15;"	d	file:
+rPRIORITY	interrupt.c	7;"	d	file:
+rSRCPND	interrupt.c	1;"	d	file:
+rSUBSRCPND	interrupt.c	13;"	d	file:
+stop	head.s	/^stop:$/;"	l

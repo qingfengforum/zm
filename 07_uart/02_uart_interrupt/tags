@@ -1,0 +1,99 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BIN	makefile	/^BIN	:=	`pwd|xargs basename`$/;"	m
+CC	lib/makefile	/^CC	:=	arm-linux-gcc$/;"	m
+CC	makefile	/^CC	:=	arm-linux-gcc$/;"	m
+C_SRC	lib/makefile	/^C_SRC	:=	$(wildcard *.c)$/;"	m
+GPB0_OUT	lib/beep.c	2;"	d	file:
+GPB0_TOUT0	lib/beep.c	3;"	d	file:
+GPB5_OUT	lib/led.c	5;"	d	file:
+GPB6_OUT	lib/led.c	6;"	d	file:
+GPB7_OUT	lib/led.c	7;"	d	file:
+GPB8_OUT	lib/led.c	8;"	d	file:
+GPG0_IN	lib/key.c	6;"	d	file:
+GPG11_IN	lib/key.c	11;"	d	file:
+GPG3_IN	lib/key.c	7;"	d	file:
+GPG5_IN	lib/key.c	8;"	d	file:
+GPG6_IN	lib/key.c	9;"	d	file:
+GPG7_IN	lib/key.c	10;"	d	file:
+LD	lib/makefile	/^LD	:=	arm-linux-ld$/;"	m
+LD	makefile	/^LD	:=	arm-linux-ld$/;"	m
+OBJCOPY	lib/makefile	/^OBJCOPY	:=	arm-linux-objcopy$/;"	m
+OBJCOPY	makefile	/^OBJCOPY	:=	arm-linux-objcopy$/;"	m
+OBJS	lib/makefile	/^OBJS	:=	${C_SRC:%.c=%.o} $/;"	m
+_LED_H__	include/led.h	2;"	d
+__KEY_H__	include/key.h	2;"	d
+__LED_H__	include/beep.h	2;"	d
+_irq	head.s	/^_irq:$/;"	l
+_reset	head.s	/^_reset:$/;"	l
+beep_off	lib/beep.c	/^void beep_off()$/;"	f
+beep_on	lib/beep.c	/^void beep_on()$/;"	f
+delay	main.c	/^void delay(int n)$/;"	f
+get_char	lib/uart.c	/^char get_char()$/;"	f
+init_beep	lib/beep.c	/^void init_beep()$/;"	f
+init_clock	lib/clock.c	/^void init_clock()$/;"	f
+init_interrupt_for_key	lib/interrupt.c	/^void init_interrupt_for_key()$/;"	f
+init_interrupt_for_timer0	lib/interrupt.c	/^void init_interrupt_for_timer0()$/;"	f
+init_interrupt_for_timer4	lib/interrupt.c	/^void init_interrupt_for_timer4()$/;"	f
+init_key	lib/key.c	/^void init_key()$/;"	f
+init_led	lib/led.c	/^void init_led()$/;"	f
+init_pwm0	lib/beep.c	/^void init_pwm0()$/;"	f
+init_timer0	lib/timer.c	/^void init_timer0()$/;"	f
+init_timer4	lib/timer.c	/^void init_timer4()$/;"	f
+init_uart0	lib/uart.c	/^void init_uart0()$/;"	f
+int_key	lib/interrupt.c	/^void int_key()$/;"	f
+int_timer4	lib/interrupt.c	/^void int_timer4()$/;"	f
+interrupt_f	lib/interrupt.c	/^void interrupt_f()$/;"	f
+isKEY	lib/key.c	/^int isKEY(int num)$/;"	f
+key_press	lib/key.c	/^int key_press()$/;"	f
+led_off	lib/led.c	/^void led_off(int num)$/;"	f
+led_off_all	lib/led.c	/^void led_off_all()$/;"	f
+led_on	lib/led.c	/^void led_on(int num)\/\/num:1-4$/;"	f
+led_on_all	lib/led.c	/^void led_on_all()$/;"	f
+main	main.c	/^int main()$/;"	f
+put_char	lib/uart.c	/^void put_char(char ch)$/;"	f
+put_string	lib/uart.c	/^void put_string(const char* str)$/;"	f
+rCLKDIVN	lib/clock.c	1;"	d	file:
+rEINTMASK	lib/interrupt.c	38;"	d	file:
+rEINTPEND	lib/interrupt.c	34;"	d	file:
+rEXTINT0	lib/interrupt.c	43;"	d	file:
+rEXTINT1	lib/interrupt.c	45;"	d	file:
+rEXTINT2	lib/interrupt.c	47;"	d	file:
+rGPBCON	lib/beep.c	4;"	d	file:
+rGPBCON	lib/led.c	1;"	d	file:
+rGPBDAT	lib/beep.c	6;"	d	file:
+rGPBDAT	lib/led.c	3;"	d	file:
+rGPGCON	lib/interrupt.c	50;"	d	file:
+rGPGCON	lib/key.c	1;"	d	file:
+rGPGDAT	lib/interrupt.c	51;"	d	file:
+rGPGDAT	lib/key.c	3;"	d	file:
+rGPHCON	lib/uart.c	32;"	d	file:
+rINTMOD	lib/interrupt.c	6;"	d	file:
+rINTMSK	lib/interrupt.c	10;"	d	file:
+rINTOFFSET	lib/interrupt.c	22;"	d	file:
+rINTPND	lib/interrupt.c	18;"	d	file:
+rINTSUBMSK	lib/interrupt.c	30;"	d	file:
+rMPLLCON	lib/clock.c	3;"	d	file:
+rPRIORITY	lib/interrupt.c	14;"	d	file:
+rSRCPND	lib/interrupt.c	2;"	d	file:
+rSUBSRCPND	lib/interrupt.c	26;"	d	file:
+rTCFG0	lib/timer.c	2;"	d	file:
+rTCFG1	lib/timer.c	4;"	d	file:
+rTCMPB0	lib/timer.c	10;"	d	file:
+rTCNTB0	lib/timer.c	8;"	d	file:
+rTCNTB4	lib/timer.c	25;"	d	file:
+rTCNTO4	lib/timer.c	27;"	d	file:
+rTCON	lib/timer.c	6;"	d	file:
+rUBRDIV0	lib/uart.c	28;"	d	file:
+rUCON0	lib/uart.c	8;"	d	file:
+rULCON0	lib/uart.c	3;"	d	file:
+rURXH0	lib/uart.c	23;"	d	file:
+rUTRSTAT0	lib/uart.c	13;"	d	file:
+rUTXH0	lib/uart.c	18;"	d	file:
+read_TCNTB4	lib/timer.c	/^int read_TCNTB4()$/;"	f
+stop	head.s	/^stop:$/;"	l
+write_TCNTB4	lib/timer.c	/^int write_TCNTB4(int c)$/;"	f
